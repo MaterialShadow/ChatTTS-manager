@@ -1,0 +1,190 @@
+2024-06-06 23:43:15.866 {34a714bba174d6171310c168c44792dd} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 50.001, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:31.597 {58157f00bf74d61729dd691f47b763d4} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.012, 127.0.0.1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:45.633 {5c3b4445c274d6172ddd691f0c85b889} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.011, 127.0.0.1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:01.062 {7ca3e9dcc574d61731dd691f88310887} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.011, 127.0.0.1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:21.950 {4475e1b9ca74d61736dd691fa3fc064f} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.011, 127.0.0.1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:48.609 {7039f7eed074d6173bdd691f169d4c26} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.010, 127.0.0.1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:46:03.381 {4c4d755fd474d6173fdd691f4478aba5} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.011, 127.0.0.1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:47:21.726 {600e199de674d61743dd691fa4d3b296} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.012, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:48:06.712 {0c9a7616f174d61747dd691fdd2cd928} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.010, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:31.276 {68a72ebf1275d6174ddd691f8fc5fc8d} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.011, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:40.627 {f03b92ec1475d61751dd691f9b1a6780} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.011, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:55.077 {ccadd4491875d61755dd691f418740a6} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.012, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:51:04.572 {5c21df7f1a75d61759dd691f211ab408} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.009, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:51:39.779 {a03ebcb12275d6172ef0f40a929a676b} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.020, ::1, "http://localhost:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 登录失败，后端服务出现错误
+   1).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:84
+   2).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+

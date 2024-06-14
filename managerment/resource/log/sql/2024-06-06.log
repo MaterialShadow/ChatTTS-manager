@@ -1,0 +1,1221 @@
+2024-06-06 23:42:46.899 [ERRO] {34a714bba174d6171310c168c44792dd} [21032 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: dial tcp 192.168.0.212:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:43:07.934 [ERRO] {34a714bba174d6171310c168c44792dd} [21032 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: dial tcp 192.168.0.212:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:43:15.864 [ERRO] {34a714bba174d6171310c168c44792dd} [7930 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: dial tcp 192.168.0.212:3306: operation was canceled 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:43:15.866 [ERRO] {34a714bba174d6171310c168c44792dd} [  0 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1
+Error: context canceled 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:43:36.894 [ERRO] {b4f25c5fad74d6171510c1682b7c303a} [21028 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: dial tcp 192.168.0.212:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:43:47.192 [ERRO] {ece5f7c3af74d6171810c168d4e9c41f} [21048 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: dial tcp 192.168.0.212:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:43:57.927 [ERRO] {b4f25c5fad74d6171510c1682b7c303a} [21033 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: dial tcp 192.168.0.212:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:44:31.587 [ERRO] {58157f00bf74d61729dd691f47b763d4} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:31.590 [ERRO] {58157f00bf74d61729dd691f47b763d4} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:31.593 [ERRO] {58157f00bf74d61729dd691f47b763d4} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:31.595 [ERRO] {58157f00bf74d61729dd691f47b763d4} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:31.598 [ERRO] {3c014001bf74d6172add691fcdf61bdc} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:44:31.600 [ERRO] {3c014001bf74d6172add691fcdf61bdc} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:44:31.601 [ERRO] {3c014001bf74d6172add691fcdf61bdc} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:44:45.624 [ERRO] {5c3b4445c274d6172ddd691f0c85b889} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:45.628 [ERRO] {5c3b4445c274d6172ddd691f0c85b889} [  3 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:45.630 [ERRO] {5c3b4445c274d6172ddd691f0c85b889} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:45.632 [ERRO] {5c3b4445c274d6172ddd691f0c85b889} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:45.634 [ERRO] {001fe445c274d6172edd691f2046f637} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:44:45.636 [ERRO] {001fe445c274d6172edd691f2046f637} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:44:45.637 [ERRO] {001fe445c274d6172edd691f2046f637} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:01.053 [ERRO] {7ca3e9dcc574d61731dd691f88310887} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:01.055 [ERRO] {7ca3e9dcc574d61731dd691f88310887} [  0 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:01.057 [ERRO] {7ca3e9dcc574d61731dd691f88310887} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:01.061 [ERRO] {7ca3e9dcc574d61731dd691f88310887} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:01.063 [ERRO] {cc7382ddc574d61732dd691f12f1e3a9} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:01.065 [ERRO] {cc7382ddc574d61732dd691f12f1e3a9} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:01.067 [ERRO] {cc7382ddc574d61732dd691f12f1e3a9} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:21.941 [ERRO] {4475e1b9ca74d61736dd691fa3fc064f} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:21.944 [ERRO] {4475e1b9ca74d61736dd691fa3fc064f} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:21.947 [ERRO] {4475e1b9ca74d61736dd691fa3fc064f} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:21.949 [ERRO] {4475e1b9ca74d61736dd691fa3fc064f} [  0 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:21.951 [ERRO] {ec4982baca74d61737dd691fe20f8783} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:21.953 [ERRO] {ec4982baca74d61737dd691fe20f8783} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:21.954 [ERRO] {ec4982baca74d61737dd691fe20f8783} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:48.601 [ERRO] {7039f7eed074d6173bdd691f169d4c26} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:48.603 [ERRO] {7039f7eed074d6173bdd691f169d4c26} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:48.605 [ERRO] {7039f7eed074d6173bdd691f169d4c26} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:48.607 [ERRO] {7039f7eed074d6173bdd691f169d4c26} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:48.611 [ERRO] {fcae90efd074d6173cdd691f1156ec17} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:48.613 [ERRO] {fcae90efd074d6173cdd691f1156ec17} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:48.615 [ERRO] {fcae90efd074d6173cdd691f1156ec17} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:46:03.374 [ERRO] {4c4d755fd474d6173fdd691f4478aba5} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:46:03.376 [ERRO] {4c4d755fd474d6173fdd691f4478aba5} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:46:03.378 [ERRO] {4c4d755fd474d6173fdd691f4478aba5} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:46:03.380 [ERRO] {4c4d755fd474d6173fdd691f4478aba5} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:46:03.382 [ERRO] {ac170960d474d61740dd691f6eb3f425} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:46:03.384 [ERRO] {ac170960d474d61740dd691f6eb3f425} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:46:03.385 [ERRO] {ac170960d474d61740dd691f6eb3f425} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:47:21.717 [ERRO] {600e199de674d61743dd691fa4d3b296} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:47:21.719 [ERRO] {600e199de674d61743dd691fa4d3b296} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:47:21.721 [ERRO] {600e199de674d61743dd691fa4d3b296} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:47:21.724 [ERRO] {600e199de674d61743dd691fa4d3b296} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:47:21.728 [ERRO] {0853b89de674d61744dd691f8b78a8c7} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:47:21.729 [ERRO] {0853b89de674d61744dd691f8b78a8c7} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:47:21.731 [ERRO] {0853b89de674d61744dd691f8b78a8c7} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:48:06.703 [ERRO] {0c9a7616f174d61747dd691fdd2cd928} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:48:06.705 [ERRO] {0c9a7616f174d61747dd691fdd2cd928} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:48:06.708 [ERRO] {0c9a7616f174d61747dd691fdd2cd928} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:48:06.710 [ERRO] {0c9a7616f174d61747dd691fdd2cd928} [  2 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:48:06.713 [ERRO] {8c251517f174d61748dd691f7b5acb61} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:48:06.715 [ERRO] {8c251517f174d61748dd691f7b5acb61} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:48:06.717 [ERRO] {8c251517f174d61748dd691f7b5acb61} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:31.267 [ERRO] {68a72ebf1275d6174ddd691f8fc5fc8d} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:31.269 [ERRO] {68a72ebf1275d6174ddd691f8fc5fc8d} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:31.272 [ERRO] {68a72ebf1275d6174ddd691f8fc5fc8d} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:31.275 [ERRO] {68a72ebf1275d6174ddd691f8fc5fc8d} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:31.277 [ERRO] {9c9ecbbf1275d6174edd691f5a4d274c} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:31.279 [ERRO] {9c9ecbbf1275d6174edd691f5a4d274c} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:31.280 [ERRO] {9c9ecbbf1275d6174edd691f5a4d274c} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:40.619 [ERRO] {f03b92ec1475d61751dd691f9b1a6780} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:40.621 [ERRO] {f03b92ec1475d61751dd691f9b1a6780} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:40.624 [ERRO] {f03b92ec1475d61751dd691f9b1a6780} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:40.626 [ERRO] {f03b92ec1475d61751dd691f9b1a6780} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:40.628 [ERRO] {20282aed1475d61752dd691ff5c4575d} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:40.630 [ERRO] {20282aed1475d61752dd691ff5c4575d} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:40.632 [ERRO] {20282aed1475d61752dd691ff5c4575d} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:55.068 [ERRO] {ccadd4491875d61755dd691f418740a6} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:55.071 [ERRO] {ccadd4491875d61755dd691f418740a6} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:55.074 [ERRO] {ccadd4491875d61755dd691f418740a6} [  2 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:55.076 [ERRO] {ccadd4491875d61755dd691f418740a6} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:55.079 [ERRO] {4c91754a1875d61756dd691f31d3cf73} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:55.080 [ERRO] {4c91754a1875d61756dd691f31d3cf73} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:55.082 [ERRO] {4c91754a1875d61756dd691f31d3cf73} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:51:04.564 [ERRO] {5c21df7f1a75d61759dd691f211ab408} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW TABLES
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:51:04.566 [ERRO] {5c21df7f1a75d61759dd691f211ab408} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:51:04.568 [ERRO] {5c21df7f1a75d61759dd691f211ab408} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_user`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:51:04.570 [ERRO] {5c21df7f1a75d61759dd691f211ab408} [  1 ms] [default] [gfast-v32] [rows:0  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:81
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+5.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+6.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:51:04.573 [ERRO] {74a263801a75d6175add691f23121e0d} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:51:04.575 [ERRO] {74a263801a75d6175add691f23121e0d} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:51:04.577 [ERRO] {74a263801a75d6175add691f23121e0d} [  1 ms] [default] [gfast-v32] [rows:0  ] SHOW FULL COLUMNS FROM `sys_login_log`
+Error: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:112
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:51:39.762 [DEBU] {a03ebcb12275d6172ef0f40a929a676b} [  2 ms] [default] [gfast] [rows:14 ] SHOW TABLES
+2024-06-06 23:51:39.765 [DEBU] {a03ebcb12275d6172ef0f40a929a676b} [  2 ms] [default] [gfast] [rows:21 ] SHOW FULL COLUMNS FROM `sys_user`
+2024-06-06 23:51:39.766 [DEBU] {a03ebcb12275d6172ef0f40a929a676b} [  0 ms] [default] [gfast] [rows:1  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE (`user_name`='admin') AND `deleted_at` IS NULL LIMIT 1
+2024-06-06 23:51:39.777 [DEBU] {a03ebcb12275d6172ef0f40a929a676b} [ 10 ms] [default] [gfast] [rows:1  ] UPDATE `sys_user` SET `last_login_ip`='::1',`last_login_time`='2024-06-06 23:51:39' WHERE `id`=1
+2024-06-06 23:51:39.781 [DEBU] {2c83d6b22275d6172ff0f40a8717d0c0} [  3 ms] [default] [gfast] [rows:10 ] SHOW FULL COLUMNS FROM `sys_login_log`
+2024-06-06 23:51:39.783 [DEBU] {2c83d6b22275d6172ff0f40a8717d0c0} [  2 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_login_log`(`login_name`,`ipaddr`,`login_location`,`browser`,`os`,`status`,`msg`,`login_time`,`module`) VALUES('admin','::1','内网IP','Chrome','Windows 10',1,'登录成功','2024-06-06 23:51:39','系统后台') 
+2024-06-06 23:52:37.223 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  2 ms] [default] [gfast] [rows:14 ] SHOW TABLES
+2024-06-06 23:52:37.227 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  2 ms] [default] [gfast] [rows:21 ] SHOW FULL COLUMNS FROM `sys_user`
+2024-06-06 23:52:37.228 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  1 ms] [default] [gfast] [rows:1  ] SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE (`user_name`='admin') AND `deleted_at` IS NULL LIMIT 1
+2024-06-06 23:52:37.239 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [ 11 ms] [default] [gfast] [rows:1  ] UPDATE `sys_user` SET `last_login_ip`='::1',`last_login_time`='2024-06-06 23:52:37' WHERE `id`=1
+2024-06-06 23:52:37.242 [DEBU] {489bd4133075d6176069772e8e1086fb} [  2 ms] [default] [gfast] [rows:10 ] SHOW FULL COLUMNS FROM `sys_login_log`
+2024-06-06 23:52:37.245 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  2 ms] [default] [gfast] [rows:8  ] SHOW FULL COLUMNS FROM `sys_role`
+2024-06-06 23:52:37.246 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  1 ms] [default] [gfast] [rows:6  ] SELECT `id`,`status`,`list_order`,`name`,`remark`,`data_scope`,`created_at`,`updated_at` FROM `sys_role` ORDER BY `list_order` asc,`id` asc
+2024-06-06 23:52:37.248 [DEBU] {489bd4133075d6176069772e8e1086fb} [  3 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_login_log`(`login_name`,`ipaddr`,`login_location`,`browser`,`os`,`status`,`msg`,`login_time`,`module`) VALUES('admin','::1','内网IP','Chrome','Windows 10',1,'登录成功','2024-06-06 23:52:37','系统后台') 
+2024-06-06 23:52:37.249 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  2 ms] [default] [gfast] [rows:7  ] SHOW FULL COLUMNS FROM `casbin_rule`
+2024-06-06 23:52:37.250 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  0 ms] [default] [gfast] [rows:30 ] SELECT `ptype`,`v0`,`v1`,`v2`,`v3`,`v4`,`v5` FROM `casbin_rule`
+2024-06-06 23:52:37.254 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  3 ms] [default] [gfast] [rows:22 ] SHOW FULL COLUMNS FROM `sys_auth_rule`
+2024-06-06 23:52:37.256 [DEBU] {dcf37f123075d6175f69772eb05ee1e9} [  1 ms] [default] [gfast] [rows:32 ] SELECT `id`,`pid`,`name`,`title`,`icon`,`condition`,`remark`,`menu_type`,`weigh`,`is_hide`,`is_cached`,`is_affix`,`path`,`redirect`,`component`,`is_iframe`,`is_link`,`link_url` FROM `sys_auth_rule` ORDER BY `weigh` desc,`id` asc
+2024-06-06 23:52:37.262 [DEBU] {c0af0a153075d6176169772ee770464b} [  2 ms] [default] [gfast] [rows:8  ] SHOW FULL COLUMNS FROM `sys_user_online`
+2024-06-06 23:52:37.263 [DEBU] {c0af0a153075d6176169772ee770464b} [  0 ms] [default] [gfast] [rows:0  ] SELECT `id` FROM `sys_user_online` WHERE `token`='5rrLCPtzPM4tnvlHq+0iav2BDmIrd9QCru7zhgXMkReVei7c8eQQV+wuRh/Z6+4lXow0buCycEjfpeX5HX5TCuTuwIxeiq7ENNnSxxZ+JWy7iYUl0ymLW7IKrza0farCmVk+98ShHW6ZFZ+U4HeKRw==' LIMIT 1
+2024-06-06 23:52:37.266 [DEBU] {c0af0a153075d6176169772ee770464b} [  2 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_user_online`(`uuid`,`token`,`create_time`,`user_name`,`ip`,`explorer`,`os`) VALUES('89ece48ac56b04cac5d257d08ac6c2e2','5rrLCPtzPM4tnvlHq+0iav2BDmIrd9QCru7zhgXMkReVei7c8eQQV+wuRh/Z6+4lXow0buCycEjfpeX5HX5TCuTuwIxeiq7ENNnSxxZ+JWy7iYUl0ymLW7IKrza0farCmVk+98ShHW6ZFZ+U4HeKRw==','2024-06-06 23:52:37','admin','::1','Chrome','Windows 10') 
+2024-06-06 23:52:42.985 [DEBU] {8c9a256a3175d6176369772e4c159b75} [  2 ms] [default] [gfast] [rows:9  ] SHOW FULL COLUMNS FROM `sys_dict_type`
+2024-06-06 23:52:42.986 [DEBU] {8c9a256a3175d6176369772e4c159b75} [  0 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_dict_type`
+2024-06-06 23:52:42.987 [DEBU] {8c9a256a3175d6176369772e4c159b75} [  0 ms] [default] [gfast] [rows:10 ] SELECT `dict_id`,`dict_name`,`dict_type`,`status`,`remark`,`created_at` FROM `sys_dict_type` ORDER BY `dict_id` asc LIMIT 0,10
+2024-06-06 23:52:42.992 [DEBU] {ecdb886a3175d6176469772e80903ea4} [  2 ms] [default] [gfast] [rows:14 ] SHOW FULL COLUMNS FROM `sys_dept`
+2024-06-06 23:52:42.993 [DEBU] {ecdb886a3175d6176469772e80903ea4} [  1 ms] [default] [gfast] [rows:14 ] SELECT `dept_id`,`parent_id`,`ancestors`,`dept_name`,`order_num`,`leader`,`phone`,`email`,`status`,`created_by`,`updated_by`,`created_at`,`updated_at`,`deleted_at` FROM `sys_dept` WHERE `deleted_at` IS NULL
+2024-06-06 23:52:42.997 [DEBU] {ecdb886a3175d6176469772e80903ea4} [  2 ms] [default] [gfast] [rows:14 ] SHOW FULL COLUMNS FROM `sys_oper_log`
+2024-06-06 23:52:43.000 [DEBU] {ecdb886a3175d6176469772e80903ea4} [  2 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('字典管理','/api/v1/system/dict/type/list','GET',1,'admin','深圳总公司','/api/v1/system/dict/type/list?pageNum=1&pageSize=10&dictName=&dictType=&status=','::1','内网IP','{"dictName":"","dictType":"","pageNum":"1","pageSize":"10","status":""}','2024-06-06 23:52:42') 
+2024-06-06 23:52:46.357 [DEBU] {e45c32333275d6176669772eca66ca2f} [  1 ms] [default] [gfast] [rows:1  ] SELECT `dict_id`,`dict_name`,`dict_type`,`status`,`create_by`,`update_by`,`remark`,`created_at`,`updated_at` FROM `sys_dict_type` WHERE `dict_id`=1 LIMIT 1
+2024-06-06 23:52:46.371 [DEBU] {c8ba63333275d6176769772e9c64aaff} [ 11 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/dict/type/get','GET',1,'admin','深圳总公司','/api/v1/system/dict/type/get?dictId=1','::1','内网IP','{"dictId":"1"}','2024-06-06 23:52:46') 
+2024-06-06 23:52:51.800 [DEBU] {34919f773375d6176969772e0ac22adb} [  1 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_dict_type`
+2024-06-06 23:52:51.802 [DEBU] {34919f773375d6176969772e0ac22adb} [  2 ms] [default] [gfast] [rows:10 ] SELECT `dict_id`,`dict_name`,`dict_type`,`status`,`remark`,`created_at` FROM `sys_dict_type` ORDER BY `dict_id` asc LIMIT 10,10
+2024-06-06 23:52:51.818 [DEBU] {b0120b783375d6176a69772e8ffd74be} [ 11 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('字典管理','/api/v1/system/dict/type/list','GET',1,'admin','深圳总公司','/api/v1/system/dict/type/list?pageNum=2&pageSize=10&dictName=&dictType=&status=','::1','内网IP','{"dictName":"","dictType":"","pageNum":"2","pageSize":"10","status":""}','2024-06-06 23:52:51') 
+2024-06-06 23:52:52.400 [DEBU] {7c506a9b3375d6176c69772e5ed56cb1} [  0 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_dict_type`
+2024-06-06 23:52:52.401 [DEBU] {7c506a9b3375d6176c69772e5ed56cb1} [  1 ms] [default] [gfast] [rows:4  ] SELECT `dict_id`,`dict_name`,`dict_type`,`status`,`remark`,`created_at` FROM `sys_dict_type` ORDER BY `dict_id` asc LIMIT 20,10
+2024-06-06 23:52:52.406 [DEBU] {d063a39b3375d6176d69772ecba71bf2} [  2 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('字典管理','/api/v1/system/dict/type/list','GET',1,'admin','深圳总公司','/api/v1/system/dict/type/list?pageNum=3&pageSize=10&dictName=&dictType=&status=','::1','内网IP','{"dictName":"","dictType":"","pageNum":"3","pageSize":"10","status":""}','2024-06-06 23:52:52') 
+2024-06-06 23:52:54.507 [DEBU] {4027fc183475d6177069772ec7f25b0c} [  1 ms] [default] [gfast] [rows:1  ] SELECT `dict_name`,`remark` FROM `sys_dict_type` WHERE (`dict_type`='sys_yes_no') AND (`status`=1) LIMIT 1
+2024-06-06 23:52:54.510 [DEBU] {4027fc183475d6177069772ec7f25b0c} [  2 ms] [default] [gfast] [rows:14 ] SHOW FULL COLUMNS FROM `sys_dict_data`
+2024-06-06 23:52:54.513 [DEBU] {884f1d193475d6177169772e1edb053c} [  3 ms] [default] [gfast] [rows:10 ] SHOW FULL COLUMNS FROM `sys_config`
+2024-06-06 23:52:54.514 [DEBU] {884f1d193475d6177169772e1edb053c} [  1 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_config`
+2024-06-06 23:52:54.514 [DEBU] {4027fc183475d6177069772ec7f25b0c} [  1 ms] [default] [gfast] [rows:2  ] SELECT `dict_value`,`dict_label`,`is_default`,`remark` FROM `sys_dict_data` WHERE (`dict_type`='sys_yes_no') AND (`status`=1) ORDER BY `dict_sort` asc,`dict_code` asc
+2024-06-06 23:52:54.515 [DEBU] {884f1d193475d6177169772e1edb053c} [  0 ms] [default] [gfast] [rows:5  ] SELECT `config_id`,`config_name`,`config_key`,`config_value`,`config_type`,`create_by`,`update_by`,`remark`,`created_at`,`updated_at` FROM `sys_config` ORDER BY `config_id` asc LIMIT 0,10
+2024-06-06 23:52:54.522 [DEBU] {6480b0193475d6177269772ed5c13604} [  3 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/dict/data/getDictData','GET',1,'admin','深圳总公司','/api/v1/system/dict/data/getDictData?dictType=sys_yes_no&defaultValue=','::1','内网IP','{"defaultValue":"","dictType":"sys_yes_no"}','2024-06-06 23:52:54') 
+2024-06-06 23:52:54.523 [DEBU] {38ccb8193475d6177369772efaf8e639} [  3 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('参数管理','/api/v1/system/config/list','GET',1,'admin','深圳总公司','/api/v1/system/config/list?pageNum=1&pageSize=10&configName=&configKey=&configType=','::1','内网IP','{"configKey":"","configName":"","configType":"","pageNum":"1","pageSize":"10"}','2024-06-06 23:52:54') 
+2024-06-06 23:52:55.994 [DEBU] {ecde94713475d6177469772eed3cf3dc} [  0 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_config`
+2024-06-06 23:52:55.995 [DEBU] {ecde94713475d6177469772eed3cf3dc} [  1 ms] [default] [gfast] [rows:5  ] SELECT `config_id`,`config_name`,`config_key`,`config_value`,`config_type`,`create_by`,`update_by`,`remark`,`created_at`,`updated_at` FROM `sys_config` ORDER BY `config_id` asc LIMIT 0,10
+2024-06-06 23:52:56.002 [DEBU] {68f1ec713475d6177569772e4f015ec6} [  2 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('参数管理','/api/v1/system/config/list','GET',1,'admin','深圳总公司','/api/v1/system/config/list?pageNum=1&pageSize=10&configName=&configKey=&configType=','::1','内网IP','{"configKey":"","configName":"","configType":"","pageNum":"1","pageSize":"10"}','2024-06-06 23:52:56') 
+2024-06-06 23:52:56.525 [DEBU] {74063e913475d6177669772e0eef3e6b} [  1 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_config`
+2024-06-06 23:52:56.526 [DEBU] {74063e913475d6177669772e0eef3e6b} [  1 ms] [default] [gfast] [rows:5  ] SELECT `config_id`,`config_name`,`config_key`,`config_value`,`config_type`,`create_by`,`update_by`,`remark`,`created_at`,`updated_at` FROM `sys_config` ORDER BY `config_id` asc LIMIT 0,10
+2024-06-06 23:52:56.532 [DEBU] {f41c7f913475d6177769772ee1d0ba45} [  3 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('参数管理','/api/v1/system/config/list','GET',1,'admin','深圳总公司','/api/v1/system/config/list?pageNum=1&pageSize=10&configName=&configKey=&configType=','::1','内网IP','{"configKey":"","configName":"","configType":"","pageNum":"1","pageSize":"10"}','2024-06-06 23:52:56') 
+2024-06-06 23:53:11.383 [DEBU] {d01dac063875d6177a69772e915f38ca} [  4 ms] [default] [gfast] [rows:1  ] SELECT `dict_name`,`remark` FROM `sys_dict_type` WHERE (`dict_type`='sys_show_hide') AND (`status`=1) LIMIT 1
+2024-06-06 23:53:11.384 [DEBU] {d01dac063875d6177b69772e476b7528} [  5 ms] [default] [gfast] [rows:32 ] SELECT `id`,`pid`,`name`,`title`,`icon`,`condition`,`remark`,`menu_type`,`weigh`,`is_hide`,`is_cached`,`is_affix`,`path`,`redirect`,`component`,`is_iframe`,`is_link`,`link_url` FROM `sys_auth_rule` ORDER BY `weigh` desc,`id` asc
+2024-06-06 23:53:11.386 [DEBU] {d01dac063875d6177a69772e915f38ca} [  3 ms] [default] [gfast] [rows:2  ] SELECT `dict_value`,`dict_label`,`is_default`,`remark` FROM `sys_dict_data` WHERE (`dict_type`='sys_show_hide') AND (`status`=1) ORDER BY `dict_sort` asc,`dict_code` asc
+2024-06-06 23:53:11.395 [DEBU] {ec0359073875d6177c69772e36796d53} [  4 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/menu/list','GET',1,'admin','深圳总公司','/api/v1/system/menu/list?title=&component=','::1','内网IP','{"component":"","title":""}','2024-06-06 23:53:11') 
+2024-06-06 23:53:11.396 [DEBU] {a42a61073875d6177d69772ef1f76b69} [  5 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/dict/data/getDictData','GET',1,'admin','深圳总公司','/api/v1/system/dict/data/getDictData?dictType=sys_show_hide&defaultValue=','::1','内网IP','{"defaultValue":"","dictType":"sys_show_hide"}','2024-06-06 23:53:11') 
+2024-06-06 23:54:45.718 [DEBU] {b8b461fd4d75d6178069772e1da3906d} [  5 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('服务监控','/api/v1/system/monitor/server','GET',1,'admin','深圳总公司','/api/v1/system/monitor/server','::1','内网IP','{}','2024-06-06 23:54:45') 
+2024-06-06 23:54:50.695 [DEBU] {9806a2254f75d6178269772e6aebf9a9} [ 11 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('服务监控','/api/v1/system/monitor/server','GET',1,'admin','深圳总公司','/api/v1/system/monitor/server','::1','内网IP','{}','2024-06-06 23:54:50') 
+2024-06-06 23:54:55.690 [DEBU] {005e6c4f5075d6178469772eac4219c0} [ 11 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('服务监控','/api/v1/system/monitor/server','GET',1,'admin','深圳总公司','/api/v1/system/monitor/server','::1','内网IP','{}','2024-06-06 23:54:55') 
+2024-06-06 23:55:55.700 [DEBU] {c863bf485e75d6178569772edc1cbba4} [  4 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_dict_type`
+2024-06-06 23:55:55.701 [DEBU] {c863bf485e75d6178569772edc1cbba4} [  0 ms] [default] [gfast] [rows:10 ] SELECT `dict_id`,`dict_name`,`dict_type`,`status`,`remark`,`created_at` FROM `sys_dict_type` ORDER BY `dict_id` asc LIMIT 0,10
+2024-06-06 23:55:55.719 [DEBU] {007741495e75d6178669772ecb7728a8} [ 14 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('字典管理','/api/v1/system/dict/type/list','GET',1,'admin','深圳总公司','/api/v1/system/dict/type/list?pageNum=1&pageSize=10&dictName=&dictType=&status=','::1','内网IP','{"dictName":"","dictType":"","pageNum":"1","pageSize":"10","status":""}','2024-06-06 23:55:55') 
+2024-06-06 23:55:57.010 [DEBU] {8c74e2965e75d6178869772e0916f34e} [  3 ms] [default] [gfast] [rows:1  ] SELECT COUNT(1) FROM `sys_config`
+2024-06-06 23:55:57.010 [DEBU] {8c74e2965e75d6178869772e0916f34e} [  0 ms] [default] [gfast] [rows:5  ] SELECT `config_id`,`config_name`,`config_key`,`config_value`,`config_type`,`create_by`,`update_by`,`remark`,`created_at`,`updated_at` FROM `sys_config` ORDER BY `config_id` asc LIMIT 0,10
+2024-06-06 23:55:57.013 [DEBU] {b467ea965e75d6178969772e2f99074f} [  4 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/dict/data/getDictData','GET',1,'admin','深圳总公司','/api/v1/system/dict/data/getDictData?dictType=sys_yes_no&defaultValue=','::1','内网IP','{"defaultValue":"","dictType":"sys_yes_no"}','2024-06-06 23:55:57') 
+2024-06-06 23:55:57.015 [DEBU] {cc8338975e75d6178a69772eef0bcafe} [  2 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('参数管理','/api/v1/system/config/list','GET',1,'admin','深圳总公司','/api/v1/system/config/list?pageNum=1&pageSize=10&configName=&configKey=&configType=','::1','内网IP','{"configKey":"","configName":"","configType":"","pageNum":"1","pageSize":"10"}','2024-06-06 23:55:57') 
+2024-06-06 23:56:00.465 [DEBU] {3852c6645f75d6178c69772e13a57d23} [  3 ms] [default] [gfast] [rows:32 ] SELECT `id`,`pid`,`name`,`title`,`icon`,`condition`,`remark`,`menu_type`,`weigh`,`is_hide`,`is_cached`,`is_affix`,`path`,`redirect`,`component`,`is_iframe`,`is_link`,`link_url` FROM `sys_auth_rule` ORDER BY `weigh` desc,`id` asc
+2024-06-06 23:56:00.476 [DEBU] {9024e7645f75d6178d69772e5c9aa182} [ 12 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/dict/data/getDictData','GET',1,'admin','深圳总公司','/api/v1/system/dict/data/getDictData?dictType=sys_show_hide&defaultValue=','::1','内网IP','{"defaultValue":"","dictType":"sys_show_hide"}','2024-06-06 23:56:00') 
+2024-06-06 23:56:00.476 [DEBU] {1c186c655f75d6178e69772e223b3fe2} [  3 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/menu/list','GET',1,'admin','深圳总公司','/api/v1/system/menu/list?title=&component=','::1','内网IP','{"component":"","title":""}','2024-06-06 23:56:00') 
+2024-06-06 23:56:01.714 [DEBU] {fc83bdae5f75d6179169772e66f0e010} [ 11 ms] [default] [gfast] [rows:1  ] INSERT INTO `sys_oper_log`(`title`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`oper_time`) VALUES('','/api/v1/system/menu/getParams','GET',1,'admin','深圳总公司','/api/v1/system/menu/getParams','::1','内网IP','{}','2024-06-06 23:56:01') 

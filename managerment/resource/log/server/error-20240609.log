@@ -1,0 +1,311 @@
+2024-06-09 17:32:18.139 {0c0990ca2c4cd71703970833df0d7491} 200 "PUT http localhost:8808 /api/v1/system/menu/update HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 接口规则已经存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysAuthRule.(*sSysAuthRule).Update
+        D:/code/gitea/gcts/internal/app/system/logic/sysAuthRule/sys_auth_rule.go:200
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*menuController).Update
+        D:/code/gitea/gcts/internal/app/system/controller/sys_auth_rule.go:71
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   5).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   6).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 18:14:50.895 {ec6263277f4ed71754334e7b167bb22e} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.002, ::1, "", "Apifox/1.0.0 (https://apifox.com)", 51, "Validation Failed", ""
+Stack:
+性别必须
+2024-06-09 19:12:19.489 {506a7916a251d717064f5f005c8bc77a} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.021, ::1, "", "Apifox/1.0.0 (https://apifox.com)", 51, "Validation Failed", ""
+Stack:
+customer_speaker_tensor不能为空
+2024-06-09 19:13:17.458 {c8924b96af51d717fc7adf3216239dee} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "", "Apifox/1.0.0 (https://apifox.com)", 68, "Internal Panic", ""
+Stack:
+1. exception recovered: 生成音频失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:17:15.165 {9848a4eee651d717df1ccd5231e4a891} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.013, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:22
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:18:42.696 {5c9ded4ffb51d71736d2e84b8c264414} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.012, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:22
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:24:44.637 {847c2e954f52d7178818565656017c3a} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.014, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:26:24.432 {742763d16652d717e5ff0d4a4be3d50e} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.015, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:22
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:27:29.168 {7c78f7e37552d7179ccf2c1200da96af} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.014, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:24
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:27:46.973 {b470de097a52d7179dcf2c1222bb1d7d} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.004, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:24
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:35:34.187 {44e662d1e652d7174c3c9517dbbb9381} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.014, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:27
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:36:05.492 {104ad21bee52d7174d3c9517c72bc8ac} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:27
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:37:49.768 {000708620653d71720af5b5aa5a6e215} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.025, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:27
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:39:56.779 {84d5faf42353d7172f3f6a15ee1b357b} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.016, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:26
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:40:28.136 {5c29d5412b53d7171a20022677284ce2} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.018, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:27
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:48:43.658 {38c1cdb87453d7171b200226b8d8277f} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 180.012, ::1, "", "Apifox/1.0.0 (https://apifox.com)", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:26
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-09 19:54:22.472 {b042e91fd053d7177ca4a71a0a65983d} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 126.254, ::1, "", "Apifox/1.0.0 (https://apifox.com)", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:22
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-09 19:56:22.923 {f4819ce60454d717f0b4756159e6c401} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 20.033, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:23
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 19:59:03.858 {24312dc92a54d7170606f578cded4299} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 18.253, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:24
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 20:00:50.768 {a0b940f23e54d7178aa6d81be207698e} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 38.573, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:27
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 20:03:05.547 {3c1d4cfb6154d717b2e2dc158791a77d} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 22.877, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:36
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 20:04:08.704 {cc4f6ac57054d717b3e2dc152f4ac855} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 22.514, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:36
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-09 21:09:36.038 {a4a4f3690858d717ceba9364eaf3fe80} 200 "GET http localhost:8808 /api/v1/cts/tts/download?aduio_name=2024_06_09_20_18_33 HTTP/1.1" 0.014, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+audio_name不能为空
+2024-06-09 21:09:41.513 {9474f5b00958d717cfba93644232c18f} 200 "GET http localhost:8808 /api/v1/cts/tts/download?aduio_name=2024_06_09_20_18_33 HTTP/1.1" 0.003, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+audio_name不能为空
+2024-06-09 21:09:42.582 {9431a8f00958d717d0ba93645395d48c} 200 "GET http localhost:8808 /api/v1/cts/tts/download?aduio_name=2024_06_09_20_18_33 HTTP/1.1" 0.002, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+audio_name不能为空
+2024-06-09 21:09:43.232 {84c552170a58d717d1ba93647c25b93d} 200 "GET http localhost:8808 /api/v1/cts/tts/download?aduio_name=2024_06_09_20_18_33 HTTP/1.1" 0.003, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+audio_name不能为空
+2024-06-09 21:10:37.565 {98e3d2bc1658d717116fd06023b9629c} 200 "GET http localhost:8808 /api/v1/cts/tts/download?aduio_name=2024_06_09_20_18_33 HTTP/1.1" 0.020, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+audio_name不能为空
+2024-06-09 21:13:36.801 {585746784058d7178758334a76fedcfd} 200 "GET http localhost:8808 /api/v1/cts/tts/download?aduio_name=2024_06_09_20_18_33 HTTP/1.1" 0.017, ::1, "", "Apifox/1.0.0 (https://apifox.com)", 51, "Validation Failed", ""
+Stack:
+audio_name不能为空
+2024-06-09 21:45:27.984 {b8dc5f74fd59d717d44d2a0e1fc6b396} 200 "GET http localhost:8808 /api/v1/cts/tts/download?aduio_name=2024_06_09_20_18_33 HTTP/1.1" 0.006, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+audio_name不能为空

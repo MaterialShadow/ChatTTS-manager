@@ -1,0 +1,210 @@
+2024-06-11 00:00:29.005 {44963f48efafd717ef14de755ebfd377} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 3.897, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 09:51:56.757 {b0f617d236d0d7171566837be9ef6637} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.021, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:81
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 10:31:06.568 {4813a9ee59d2d7173466837b073592ce} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:81
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 11:31:56.147 {b475ea87a8d5d7177766837b4118234b} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 13.472, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:85
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 12:11:03.318 {a4147a28ced7d717c866837bc8f331d2} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.012, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:85
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 12:41:16.949 {dc86c96d74d9d717f366837bd12d8ced} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.003, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-11 13:24:59.107 {b05d7e8762dbd7170667837b2a623747} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 500.016, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:81
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 13:29:10.641 {601a83c502dcd7170867837b9881a96c} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 63.315, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:81
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 15:54:56.129 {20f7a9ba05e4d7171b71e9725f8a7408} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 15:56:28.658 {e4f126461be4d7172b71e9721e8270a3} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.001, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 15:56:33.179 {98c793531ce4d7172d71e9728f0f09d4} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.003, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 15:56:38.065 {ccbed0761de4d7172f71e9720efcc123} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.002, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 15:56:49.652 {1475722920e4d7173371e972652fbd57} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.002, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 15:57:22.605 {0cbf9ad527e4d7173771e9725fdbccf2} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.003, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 15:57:36.412 {98de7d0c2be4d7173b71e9721d351a34} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.004, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 16:04:13.983 {4076a09d87e4d7174171e972ac4d7ed0} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.003, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 16:04:39.624 {e075cb958de4d7174371e972f27afe90} 200 "PUT http localhost:8808 /api/v1/cts/voice/rate HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+id不能为空
+2024-06-11 16:10:48.587 {e0c67d7de3e4d7173efbc32f90b98e96} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:67
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 16:36:49.381 {80b917e44ee6d7173ae6f413e7558316} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:69
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 16:51:11.052 {c8ff2f8317e7d7173fd08c117a7b7e65} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.017, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:69
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 16:58:10.081 {18d5d61379e7d7177590b2258fee3636} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 18:02:33.989 {d0d9c2b6fcead71759a3d15ae6ec6f0d} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-11 18:26:39.930 {cce19b5f4decd7178da3d15a9952d519} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-11 21:19:11.046 {fca42b6eb7f5d7170ba4d15a9bf8b563} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-11 22:29:10.890 {38cb6f4789f9d71773a4d15ae855d32a} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.021, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-11 22:30:01.710 {d49f861d95f9d7177aa4d15a47051767} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空

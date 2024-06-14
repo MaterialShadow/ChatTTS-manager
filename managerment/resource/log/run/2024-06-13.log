@@ -1,0 +1,328 @@
+2024-06-13 11:29:48 [INFO] {04c81a2cb772d8170aa0bf78950bad25} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 11:29:59 [ERRO] {a4c0248cb972d8170ea0bf78d143b14a} D:/code/gitea/gcts/library/liberr/err.go:18: sql: no rows in result set 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 13:45:46 [INFO] {7097559d227ad817e73ed814ced0f599} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 13:45:52 [INFO] {38fb7306247ad817e83ed814c13e04bb} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 13:46:09 [INFO] {f82c89e2277ad817e93ed814b9fd07ff} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 13:47:10 [INFO] {9417702f367ad817bba5dd29c9891f4d} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 13:48:28 [INFO] {ec33372d487ad8176adc7406a78f2098} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 13:49:26 [INFO] {70fa9eb8557ad817e473f213cd75e15a} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 13:50:32 [INFO] {9cb7c917657ad8177c1281283f328186} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 13:56:23 [INFO] {1c1b63e9b67ad817f3cdf61c4df0eafd} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 14:13:13 [INFO] {0884a8efa17bd817f956e92bcaa0776b} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 14:25:41 [INFO] {a4a54739507cd8179b739254d993a390} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 14:31:49 [INFO] {18e7ead0a57cd817a7bdd55a0f26f6b0} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 14:34:35 [INFO] {c8b5a485cc7cd8177918715a929fe486} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 16:28:38 [INFO] {48bb5fa10583d8179510ab553ebd2ac9} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 16:47:22 [INFO] {bc6e40600b84d817a911ab551b7ba819} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 16:47:44 [INFO] {24f955941084d817b611ab558545747d} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 16:48:13 [INFO] {c86047451784d817221cb94df92ab4b7} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 16:49:42 [INFO] {24a7df132c84d817301cb94d42bd920d} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 16:57:05 [INFO] {cc24612d9384d817581cb94d75ce3a26} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 16:58:25 [INFO] {0c982deba584d8177f1cb94de2df7a69} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 16:58:41 [INFO] {60ed4b93a984d8178c1cb94d22f30c24} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 17:00:19 [INFO] {281c7043c084d817c71db94d3655971b} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 17:01:06 [INFO] {30c2513acb84d817e01db94db7b75d76} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 17:01:52 [INFO] {c801c8f0d584d8175f828206cc174d52} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 17:02:45 [ERRO] {2cef3b6ae284d8176c828206f50647b9} D:/code/gitea/gcts/library/liberr/err.go:18: invalid character '0' looking for beginning of object key string 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:291
+3.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:285
+4.  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+    D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+6.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+7.  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+    C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+8.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 17:03:47 [INFO] {b8bf34acf084d817a008c673a9fbbdd9} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 17:12:28 [ERRO] {04808ab4f484d817ad08c67384aa2463} D:/code/gitea/gcts/library/liberr/err.go:18: invalid character '0' looking for beginning of object key string 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:291
+3.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:285
+4.  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+    D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+6.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+7.  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+    C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+8.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 17:12:54 [ERRO] {b8a74d3f7085d817ba08c6737de40fdf} D:/code/gitea/gcts/library/liberr/err.go:18: invalid character '0' looking for beginning of object key string 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:291
+3.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:285
+4.  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+    D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+6.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+7.  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+    C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+8.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 17:19:27 [INFO] {507784aecb85d817ff132830895529e6} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 17:19:39 [ERRO] {7c27b86ece85d8170c142830469398d9} D:/code/gitea/gcts/library/liberr/err.go:18: invalid character '0' looking for beginning of object key string 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:295
+3.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:285
+4.  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+    D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+6.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+7.  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+    C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+8.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 17:20:54 [INFO] {90b00dd4df85d81798c4482d0bc34c33} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 17:21:41 [ERRO] {8843c3ceea85d817a5c4482d8350be74} D:/code/gitea/gcts/library/liberr/err.go:18: invalid character '&' looking for beginning of value 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:295
+3.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:285
+4.  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+    D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+6.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+7.  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+    C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+8.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 17:44:28 [INFO] {349115162987d81775dff714751b005c} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 17:47:23 [INFO] {5082d0d45187d817fdb47c1a9bbed473} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 17:59:18 [INFO] {dc76fc3ff887d8179676751cad8c3a50} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 18:07:49 [INFO] {c4f378556f88d8170cef3a42cc61b5d5} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 18:08:20 [INFO] {68abe7977688d817f3b3172273c1a3b8} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 18:09:25 [INFO] {3c8013b98588d817e617f94015374b15} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 18:09:33 [ERRO] {cc3c6b9a8788d817f317f940c5f90e1c} D:/code/gitea/gcts/library/liberr/err.go:18: json: cannot unmarshal array into Go struct field CtsVoice.tensor of type string 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:294
+3.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+4.  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+    D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+6.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+7.  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+    C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+8.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:11:01 [INFO] {503986fe9b88d8177e854e21b5b680c7} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 18:14:06 [INFO] {2888f627c788d8175fadca642e581d7e} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 18:16:22 [INFO] {105a2eb2e688d817d0dc09253263bb30} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 19:32:33 [INFO] {88f715ed0e8dd8174421d6742867c270} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 21:07:20 [INFO] {f85b5b1f3b92d817ca22d674f185ae78} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-13 21:09:00 [INFO] {0cb9ae5c5292d817faf64102bc447714} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 22:26:03 [INFO] {5c2283c88696d8173aeaf60693212909} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 22:37:35 [INFO] {e08495052897d817608d103816bba850} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-13 22:40:20 [INFO] {f0a814544e97d817e71fa538fe5a7101} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19

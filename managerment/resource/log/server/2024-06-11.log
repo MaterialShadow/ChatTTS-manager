@@ -1,0 +1,68 @@
+2024-06-11 00:30:03.083 [INFO] pid[97708]: all servers shutdown
+2024-06-11 09:49:37.848 [INFO] pid[21208]: http server started listening on [:8808]
+2024-06-11 09:49:37.848 [INFO] {a4c8247a16d0d7170f66837bd4391c40} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 09:49:37.849 [INFO] {a4c8247a16d0d7170f66837bd4391c40} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 14:40:04.577 [INFO] pid[21208]: all servers shutdown
+2024-06-11 14:40:09.280 [INFO] pid[102300]: http server started listening on [:8808]
+2024-06-11 14:40:09.280 [INFO] {448d930cf1dfd7177a97fa5d123a93ea} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 14:40:09.282 [INFO] {448d930cf1dfd7177a97fa5d123a93ea} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 14:53:24.397 [INFO] pid[102300]: all servers shutdown
+2024-06-11 14:53:29.626 [INFO] pid[57740]: http server started listening on [:8808]
+2024-06-11 14:53:29.626 [INFO] {e41c0565abe0d717849f295cfb19af43} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 14:53:29.627 [INFO] {e41c0565abe0d717849f295cfb19af43} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 15:25:46.553 [INFO] pid[57740]: all servers shutdown
+2024-06-11 15:25:51.853 [INFO] pid[96720]: http server started listening on [:8808]
+2024-06-11 15:25:51.853 [INFO] {b4c2de9a6fe2d717630044343fad5c54} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 15:25:51.855 [INFO] {b4c2de9a6fe2d717630044343fad5c54} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 15:49:04.099 [INFO] pid[96720]: all servers shutdown
+2024-06-11 15:49:09.621 [INFO] pid[102120]: http server started listening on [:8808]
+2024-06-11 15:49:09.621 [INFO] {78d23e0cb5e3d7175f94d953a1c9c521} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 15:49:09.622 [INFO] {78d23e0cb5e3d7175f94d953a1c9c521} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 15:52:06.893 [INFO] pid[102120]: all servers shutdown
+2024-06-11 15:52:10.869 [INFO] pid[52180]: http server started listening on [:8808]
+2024-06-11 15:52:10.869 [INFO] {8418213fdfe3d7171471e972b956dd99} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 15:52:10.871 [INFO] {8418213fdfe3d7171471e972b956dd99} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 16:07:58.701 [INFO] pid[52180]: all servers shutdown
+2024-06-11 16:08:03.393 [INFO] pid[103860]: http server started listening on [:8808]
+2024-06-11 16:08:03.393 [INFO] {b0e45f06bde4d7177072164c201adb82} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 16:08:03.394 [INFO] {b0e45f06bde4d7177072164c201adb82} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 16:10:26.864 [INFO] pid[103860]: all servers shutdown
+2024-06-11 16:10:31.137 [INFO] pid[75624]: http server started listening on [:8808]
+2024-06-11 16:10:31.137 [INFO] {e8488b6cdfe4d71737fbc32f6f5a026a} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 16:10:31.138 [INFO] {e8488b6cdfe4d71737fbc32f6f5a026a} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 16:35:35.126 [INFO] pid[75624]: all servers shutdown
+2024-06-11 16:35:40.185 [INFO] pid[43588]: http server started listening on [:8808]
+2024-06-11 16:35:40.185 [INFO] {984cd1c63ee6d7172ae6f413fe6da352} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 16:35:40.186 [INFO] {984cd1c63ee6d7172ae6f413fe6da352} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 16:47:42.674 [INFO] pid[43588]: all servers shutdown
+2024-06-11 16:47:47.047 [INFO] pid[106164]: http server started listening on [:8808]
+2024-06-11 16:47:47.047 [INFO] {c0791803e8e6d7173bd08c114efa6151} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 16:47:47.048 [INFO] {c0791803e8e6d7173bd08c114efa6151} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 16:53:33.096 [INFO] pid[106164]: all servers shutdown
+2024-06-11 16:53:37.709 [INFO] {10930da839e7d7176a90b2253c3b47a5} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 16:53:37.709 [INFO] pid[107284]: http server started listening on [:8808]
+2024-06-11 16:53:37.710 [INFO] {10930da839e7d7176a90b2253c3b47a5} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 16:58:59.142 [INFO] pid[107284]: all servers shutdown
+2024-06-11 16:59:02.498 [INFO] pid[82224]: http server started listening on [:8808]
+2024-06-11 16:59:02.498 [INFO] {a83e254785e7d717fe6f8a602d10d992} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 16:59:02.499 [INFO] {a83e254785e7d717fe6f8a602d10d992} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 17:03:38.473 [INFO] pid[82224]: all servers shutdown
+2024-06-11 17:03:43.173 [INFO] pid[103836]: http server started listening on [:8808]
+2024-06-11 17:03:43.173 [INFO] {00288aa0c6e7d717bd2f141bfde1c1ef} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 17:03:43.174 [INFO] {00288aa0c6e7d717bd2f141bfde1c1ef} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 17:03:47.575 [INFO] pid[103836]: all servers shutdown
+2024-06-11 17:03:51.361 [INFO] pid[87416]: http server started listening on [:8808]
+2024-06-11 17:03:51.361 [INFO] {98a5cb88c8e7d717c08b384d6675cea6} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 17:03:51.362 [INFO] {98a5cb88c8e7d717c08b384d6675cea6} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 17:06:22.108 [INFO] pid[87416]: all servers shutdown
+2024-06-11 17:06:25.716 [INFO] pid[104120]: http server started listening on [:8808]
+2024-06-11 17:06:25.716 [INFO] {d0841379ece7d7170b8ad152601dc681} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 17:06:25.717 [INFO] {d0841379ece7d7170b8ad152601dc681} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 17:10:20.358 [INFO] pid[104120]: all servers shutdown
+2024-06-11 17:10:22.452 [INFO] pid[102220]: http server started listening on [:8808]
+2024-06-11 17:10:22.452 [INFO] {b818a19723e8d717da936924bb95884e} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 17:10:22.454 [INFO] {b818a19723e8d717da936924bb95884e} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-11 17:25:39.995 [INFO] pid[102220]: all servers shutdown
+2024-06-11 17:25:44.537 [INFO] pid[106500]: http server started listening on [:8808]
+2024-06-11 17:25:44.537 [INFO] {503bff47fae8d71700a3d15a1d3a055b} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-11 17:25:44.538 [INFO] {503bff47fae8d71700a3d15a1d3a055b} openapi specification is serving at address: http://127.0.0.1:8808/api.json

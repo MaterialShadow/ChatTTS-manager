@@ -1,0 +1,336 @@
+2024-06-06 23:40:45 [INFO] {08e5bf4c8a74d6170910c168898bbdd4} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-06 23:43:15 [ERRO] {34a714bba174d6171310c168c44792dd} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1: context canceled 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:16 [INFO] {4428738ebb74d61725dd691fdd36ff5e} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-06 23:44:31 [ERRO] {58157f00bf74d61729dd691f47b763d4} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:31 [ERRO] {3c014001bf74d6172add691fcdf61bdc} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:44:45 [ERRO] {5c3b4445c274d6172ddd691f0c85b889} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:44:45 [ERRO] {001fe445c274d6172edd691f2046f637} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:01 [ERRO] {7ca3e9dcc574d61731dd691f88310887} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:01 [ERRO] {cc7382ddc574d61732dd691f12f1e3a9} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:21 [ERRO] {4475e1b9ca74d61736dd691fa3fc064f} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:21 [ERRO] {ec4982baca74d61737dd691fe20f8783} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:45:48 [ERRO] {7039f7eed074d6173bdd691f169d4c26} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:45:48 [ERRO] {fcae90efd074d6173cdd691f1156ec17} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:46:03 [ERRO] {4c4d755fd474d6173fdd691f4478aba5} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:46:03 [ERRO] {ac170960d474d61740dd691f6eb3f425} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:47:21 [ERRO] {600e199de674d61743dd691fa4d3b296} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:47:21 [ERRO] {0853b89de674d61744dd691f8b78a8c7} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:48:06 [ERRO] {0c9a7616f174d61747dd691fdd2cd928} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='demo' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:48:06 [ERRO] {8c251517f174d61748dd691f7b5acb61} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:31 [ERRO] {68a72ebf1275d6174ddd691f8fc5fc8d} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:31 [ERRO] {9c9ecbbf1275d6174edd691f5a4d274c} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:40 [ERRO] {f03b92ec1475d61751dd691f9b1a6780} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:40 [ERRO] {20282aed1475d61752dd691ff5c4575d} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:50:55 [ERRO] {ccadd4491875d61755dd691f418740a6} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:50:55 [ERRO] {4c91754a1875d61756dd691f31d3cf73} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:51:04 [ERRO] {5c21df7f1a75d61759dd691f211ab408} D:/code/gitea/gcts/library/liberr/err.go:18: SELECT `id`,`user_name`,`user_nickname`,`user_password`,`user_salt`,`user_status`,`is_admin`,`avatar`,`dept_id` FROM `sys_user` WHERE `user_name`='admin' LIMIT 1: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:51:04 [ERRO] {74a263801a75d6175add691f23121e0d} D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114: SHOW FULL COLUMNS FROM `sys_login_log`: Error 1049 (42000): Unknown database 'gfast-v32' 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).LoginLog
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:114
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysLoginLog.(*sSysLoginLog).Invoke.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysLoginLog/sys_login_log.go:42
+
+2024-06-06 23:51:22 [INFO] {5817b2b11e75d6172cf0f40a9c0cce91} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-06 23:51:39 [ERRO] {a03ebcb12275d6172ef0f40a929a676b} D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:83: Redis Client Do failed with arguments "[Get gfToken:1-21232f297a57a5a743894a0e4a801fc3c1aaa0b2f4ef8dcb483abb87d28de654]": dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it. 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:83
+2.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-06 23:52:17 [INFO] {148e17942b75d6175c69772e3f783a7d} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19

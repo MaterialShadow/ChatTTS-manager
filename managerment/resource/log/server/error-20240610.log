@@ -1,0 +1,989 @@
+2024-06-10 15:39:39.269 {94a942b09b94d7170d4e2a0e4b4423cb} 200 "GET http localhost:8808 /api/v1/cts/tts/download?audio_name=2024_06_09_20_18_33 HTTP/1.1" 0.007, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+direct不能为空
+2024-06-10 21:04:15.327 {8cc51c4f52a6d717b0ddb6217124744e} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.017, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:67
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 21:33:19.739 {1c0ade76e8a7d717d2ddb6212dcaf24f} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:34:50.817 {284282abfda7d717d6ddb621edaf3986} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:34:55.391 {f88741bcfea7d717d8ddb621608cc696} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:40:55.587 {c0a1979952a8d717e3ddb621e0a7fb25} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:40:59.229 {28c8a27253a8d717e5ddb621b4c66a1b} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:02.301 {f867c62954a8d717e7ddb6219f9fce8c} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:03.517 {4cf1407254a8d717e9ddb621971777cf} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:28.748 {0c271f525aa8d717eeddb621a61867ff} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:33.281 {a4ee32605ba8d717f0ddb621904a4ba9} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:36.136 {10e5700a5ca8d717f2ddb62143edfd70} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:37.271 {d8d21c4e5ca8d717f4ddb62158cd7c56} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:38.121 {54ada7805ca8d717f6ddb621d4b36a8b} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:38.783 {d8e937a85ca8d717f8ddb621ce42d96b} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:38.893 {e4ded0ae5ca8d717faddb621c7b9a3d7} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:41:44.924 {c49837165ea8d717fcddb6212cf7d520} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:42:25.396 {cc8d888267a8d717feddb62179b07fd0} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:42:29.014 {68cd2e5a68a8d71700deb62173f50830} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:43:46.050 {14adf1497aa8d71705deb6218f073d4d} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:43:49.440 {302506147ba8d71707deb621304c32a0} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:43:57.629 {14af1cfc7ca8d71709deb62100fb8295} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:44:16.549 {ec43cb6381a8d7170cdeb62122b0d41c} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:45:09.022 {80407e9b8da8d7170edeb621c21bbc63} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:45:43.334 {bc91aa9895a8d71712deb621f23a360d} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:45:57.898 {c03c9efc98a8d71716deb62133e28a9c} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:45:59.023 {8053c53f99a8d71718deb621ed3ceb73} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:45:59.607 {0caa8d6299a8d7171adeb6215f5a661a} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:45:59.799 {9ce4fd6d99a8d7171cdeb62187ba9082} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:00.331 {80ffc08d99a8d7171edeb621996af563} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:00.871 {3cd2e9ad99a8d71720deb62130821fd9} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:01.429 {004e24cf99a8d71722deb621f85ede2c} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:08.327 {4c835b6a9ba8d71724deb6214111003f} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:09.048 {58ea4e959ba8d71726deb621db7be8c9} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:09.482 {0cee36af9ba8d71728deb621965ffa89} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:09.862 {dccbccc59ba8d7172adeb6217de9e4d0} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:10.070 {741c41d29ba8d7172cdeb621920b86fa} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:10.233 {e001e1db9ba8d7172edeb621f3ac681b} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:46:10.418 {b4fffee69ba8d71730deb6216c3e8782} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:48:43.068 {c86d9c71bfa8d71737deb62190da1ffa} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:50:20.785 {0ce0ff31d6a8d7173adeb62113210647} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.005, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-10 21:52:26.465 {a02fd074f3a8d7173edeb62186291ee4} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:43.457 {94b9c769f7a8d71740deb621596b3a3e} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:44.531 {d8a8b8a9f7a8d71742deb621a01c963a} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:45.228 {c4ec63d3f7a8d71744deb62187c76228} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:45.383 {b0799bdcf7a8d71746deb62147be8b3f} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:45.802 {04f977f5f7a8d71748deb621f869df35} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:46.410 {7c56ce19f8a8d7174adeb6217a938d7c} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:46.670 {10f22529f8a8d7174cdeb621d28aa8ef} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:47.065 {d407c640f8a8d7174edeb621feed25c2} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:47.253 {b40cef4bf8a8d71750deb621000b1fbe} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:47.418 {c849cb55f8a8d71752deb621816f9414} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:47.589 {3c58f35ff8a8d71754deb621aef7e1b9} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:47.774 {d094f96af8a8d71756deb621d7ea8f81} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:47.936 {cc879774f8a8d71758deb621b2fd84e3} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:48.117 {c80e5a7ff8a8d7175adeb621e777b8ce} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:48.278 {0c241a89f8a8d7175cdeb621ddbc4561} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:48.445 {809efe92f8a8d7175edeb62163d283c7} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:48.615 {84dc2f9df8a8d71760deb621c0085e20} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:48.763 {38c4f4a5f8a8d71762deb62100846e16} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:48.962 {94d3d2b1f8a8d71764deb621f8b1d4e3} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:49.137 {2cce26bcf8a8d71766deb621214d6911} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:49.290 {5c5057c5f8a8d71768deb621cf78b32b} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:49.482 {bc2cd8d0f8a8d7176adeb6217fcf29e9} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:49.677 {146d5cdcf8a8d7176cdeb6210af7ec58} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:53.363 {4c8f25b8f9a8d7176edeb621ef77a5cd} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:53.870 {c46b5dd6f9a8d71770deb6212df87bd8} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:54.215 {7808f3eaf9a8d71772deb62153ec75a1} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:54.572 {b4413600faa8d71774deb6217cd54be6} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:54.746 {3494950afaa8d71776deb62135fd908d} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:54.900 {281ebe13faa8d71778deb621146343b8} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.008, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:55.054 {88a4ec1cfaa8d7177adeb62181e9c501} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:52:55.213 {38cc7426faa8d7177cdeb621812f6552} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:71
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:54:18.475 {44937c880da9d7177edeb621d9910f40} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.021, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:72
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 21:54:27.939 {f04e1fbd0fa9d71780deb621fcccc514} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.013, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:72
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 21:54:32.916 {3c13f9e510a9d71782deb62168e25bf3} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.010, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:72
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 21:55:11.620 {80f464e719a9d717d8fb694bb02ef48f} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.034, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:72
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 21:56:16.920 {c81b161c29a9d7170830a558f91dc09e} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.026, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:73
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 22:07:24.980 {cc92c727c3a9d717a8cbcb413ca2b3ff} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 6.465, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:80
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 22:08:19.053 {0866cd97cfa9d717a9cbcb41603cde03} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 7.119, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:80
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 22:17:43.436 {146da80249aad717accbcb41908e1bd0} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 50.017, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:79
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 22:54:31.903 {946511da56acd717c4a50e2c6eeb72be} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.013, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:83
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 22:56:38.222 {e8bc804274acd71702dec9281a42f4a7} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.026, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:83
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 22:57:54.282 {a82806f885acd7179e85836cd0c149a2} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.026, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:87
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 23:00:07.847 {a06c860c8dacd7179f85836ce8b2e2c2} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 103.182, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:87
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 23:00:41.868 {ccd012fdacacd7177db56d7341715419} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.023, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:87
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 23:02:29.647 {6ce08214c6acd717ecc7ab607e457fcf} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.035, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:02:34.245 {84420828c7acd717edc7ab6069b78e23} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:02:38.577 {944c5e2ac8acd717eec7ab60422a3e37} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:03:53.373 {3c396794d9acd717efc7ab6047affaa4} 500 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. exception recovered
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:85
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+2. runtime error: invalid memory address or nil pointer dereference
+
+2024-06-10 23:07:06.735 {2c86188cf8acd717b714de751780ad00} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 60.369, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:82
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:08:32.908 {d893fba91aadd717b814de750ff8c3ef} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:09:10.725 {24a4137823add717b914de753ff8e259} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:82
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:09:41.761 {1c3bb7b12aadd717ba14de7517e3dcdb} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.015, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:12:22.489 {4cfbe41d50add717bb14de75b31fd26c} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.014, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:13:38.335 {c8b3cdc661add717bc14de753c27a469} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.012, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:15:01.288 {50bdf98869add717bd14de759fb0fc89} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 49.642, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:82
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:15:33.200 {08c55c857cadd717be14de7515068f98} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-10 23:15:41.493 {6400c1737eadd717bf14de75968fb1e2} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.009, ::1, "", "Apifox/1.0.0 (https://apifox.com)", -1, "", ""
+Stack:
+1. TTS生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:86
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+

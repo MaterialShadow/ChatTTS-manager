@@ -1,0 +1,503 @@
+2024-06-13 11:29:59.103 {a4c0248cb972d8170ea0bf78d143b14a} 200 "POST http localhost:8808 /api/v1/system/login HTTP/1.1" 0.017, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 账号密码错误
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:21
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:63
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+        D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:07:59.585 {408856977188d8171aef3a42ec21b0d9} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.293, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+json: cannot unmarshal array into Go struct field CtsVoice.tensor of type string
+2024-06-13 18:08:32.725 {7c9dc35d7988d81700b41722060d283f} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.038, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+json: cannot unmarshal array into Go struct field CtsVoice.tensor of type string
+2024-06-13 18:09:33.853 {cc3c6b9a8788d817f317f940c5f90e1c} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.020, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+json: cannot unmarshal array into Go struct field CtsVoice.tensor of type string
+2024-06-13 18:14:15.987 {54fc184ac988d8176cadca64cb4d6b46} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.033, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:18:36.131 {d8ff0ddc0589d817e9dc09256449a468} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.031, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:19:34.174 {8012455f1389d81702dd0925f11a846d} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.038, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:19:57.212 {302a9dbc1889d8171bdd092588e2d190} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.035, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:25:19.890 {509eecdd6389d81734dd09256ec2f145} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.032, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:26:14.830 {5803a3a87089d8174ddd09258c52488e} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.030, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:32:33.715 {e07202e0c889d81766dd09250e56fcfa} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.030, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:34:16.993 {44e7a1ebe089d8177fdd09259a81f96b} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.032, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:34:41.508 {3490e4a0e689d81798dd0925a10df710} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.032, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:37:47.000 {f036e0d0118ad817bddd09259a38cc94} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.036, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:37:47.013 {1c936bd1118ad817bedd0925a8209c10} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.039, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:39:07.841 {80d58aa3248ad817d9dd09251e76d1cb} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.033, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:39:07.849 {6467f6a3248ad817dadd09251e8e2d3b} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.033, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:46:27.795 {d82e95128b8ad81755de09255b166d8e} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.037, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:46:27.801 {948419138b8ad81756de0925f34445cc} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.035, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:47:18.775 {38e949f1968ad81759de09250527a0da} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.037, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:47:18.778 {a492c5f1968ad8175ade09254da2d347} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.031, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:48:00.473 {6cafe0a6a08ad81782de0925a4ea5c53} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.033, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:48:00.478 {cc8b3fa7a08ad81783de0925cb60ca8f} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.032, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:49:08.935 {e08f9a97b08ad81792de0925741dca81} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.032, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:49:16.408 {344d9354b28ad81794de09256c9e1c01} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.038, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:49:30.745 {d85e6fabb58ad81796de0925ab4c08b8} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.034, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:50:16.952 {6c00bd6dc08ad817a4de09252c634cf2} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.031, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:50:46.471 {78af764cc78ad817a6de0925d81597ad} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.045, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:50:51.340 {14296f6fc88ad817a8de0925afb6950a} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.032, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 18:56:05.352 {34450f8b118bd817aade0925fc7f2c3a} 200 "POST http localhost:8808 /api/v1/cts/voice/upload HTTP/1.1" 0.047, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 声音名称重复,已存在,请修改后再试: 声音有点像陈一发,纯情男大学生,阳光开朗大男孩,知心小姐姐,电视台女主持,魅力大叔,比较甜美,正式,娘娘腔,好哥们,知书达理,班级话痨,歪果仁讲中文,大虎妞,嗲嗲的很酥麻,音色有韵味带磁性,做事很着急的领导,有磁性的男播音,文弱书生,天生男低音,娘娘腔拉满了,严肃女领导
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:314
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UploadJson
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:287
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Upload
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:149
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-13 21:09:15.602 {e86bf5ec5592d817fbf64102a9b64057} 200 "GET http localhost:8808 /api/v1/system/logout HTTP/1.1" 0.016, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. token is invalid
+   1).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).GetTokenData
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:152
+   2).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).RemoveToken
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:244
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).LoginOut
+        D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+

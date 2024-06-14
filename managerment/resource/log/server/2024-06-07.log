@@ -1,0 +1,31 @@
+2024-06-07 13:25:05.309 [INFO] pid[50076]: all servers shutdown
+2024-06-07 14:17:31.152 [INFO] pid[57200]: http server started listening on [:8808]
+2024-06-07 14:17:31.152 [INFO] {90ee289062a4d6175791ec24a05cf01b} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-07 14:17:31.153 [INFO] {90ee289062a4d6175791ec24a05cf01b} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-07 15:43:59.850 [INFO] pid[57200]: all servers shutdown
+2024-06-07 15:44:05.304 [INFO] pid[57964]: http server started listening on [:8808]
+2024-06-07 15:44:05.304 [INFO] {687f0aec1ba9d617774b4f0dd11662a0} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-07 15:44:05.305 [INFO] {687f0aec1ba9d617774b4f0dd11662a0} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-07 15:47:05.665 [INFO] pid[57964]: all servers shutdown
+2024-06-07 15:47:08.033 [INFO] pid[58948]: http server started listening on [:8808]
+2024-06-07 15:47:08.033 [INFO] {0055d27746a9d61792350a4411caec56} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-07 15:47:08.035 [INFO] {0055d27746a9d61792350a4411caec56} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-07 15:57:11.100 [INFO] pid[58948]: all servers shutdown
+2024-06-07 15:57:16.931 [INFO] pid[49404]: http server started listening on [:8808]
+2024-06-07 15:57:16.931 [INFO] {106cbc3cd4a9d617e4077c2eac4240b9} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-07 15:57:16.933 [INFO] {106cbc3cd4a9d617e4077c2eac4240b9} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-07 16:05:30.993 [INFO] pid[49404]: all servers shutdown
+2024-06-07 16:05:37.061 [FATA] {6cb836af48aad617f4b33e2f353ee8bf} invalid method value "del", should be in "GET,PUT,POST,DELETE,PATCH,HEAD,CONNECT,OPTIONS,TRACE" or "ALL" 
+Stack:
+1.  github.com/tiger1103/gfast/v3/internal/cmd.glob..func1
+    D:/code/gitea/gcts/internal/cmd/cmd.go:28
+2.  main.main
+    D:/code/gitea/gcts/main.go:14
+
+2024-06-07 16:06:29.837 [INFO] pid[59404]: http server started listening on [:8808]
+2024-06-07 16:06:29.837 [INFO] {f85594f854aad617185f54105d3779da} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-07 16:06:29.838 [INFO] {f85594f854aad617185f54105d3779da} openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2024-06-07 16:07:20.209 [INFO] pid[59404]: all servers shutdown
+2024-06-07 16:07:25.078 [INFO] {502bf1d461aad617e453591fd3e2f7da} swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2024-06-07 16:07:25.077 [INFO] pid[52560]: http server started listening on [:8808]
+2024-06-07 16:07:25.079 [INFO] {502bf1d461aad617e453591fd3e2f7da} openapi specification is serving at address: http://127.0.0.1:8808/api.json

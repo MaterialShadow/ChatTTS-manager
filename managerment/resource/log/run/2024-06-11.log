@@ -1,0 +1,169 @@
+2024-06-11 09:49:37 [INFO] {d893c07a16d0d7171266837b50bf3bb6} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 12:25:59 [INFO] {c08ad3e39ed8d717d666837bc9303c8c} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 14:40:09 [INFO] {4852290df1dfd7177d97fa5dc7a7b0a1} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 14:45:43 [INFO] {f00facf93ee0d7177e97fa5d0b0f096b} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 14:53:29 [INFO] {dcb59165abe0d717879f295c96dce074} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 14:54:01 [INFO] {34e567ddb2e0d717889f295c370a46af} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 15:04:06 [INFO] {04972bba3fe1d717ae9f295ca4e359d2} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: decrypt Token empty
+2024-06-11 15:25:51 [INFO] {94584f9b6fe2d717660044349ac873b4} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 15:27:39 [INFO] {285f369c88e2d717670044346a72c822} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 15:49:09 [INFO] {ac75b70cb5e3d7176294d953b71f63b3} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 15:49:16 [INFO] {e4310eb1b6e3d7176394d953f1bdbaf3} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 15:52:10 [INFO] {d0bece3fdfe3d7171771e972b5b5cbc1} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 15:54:40 [INFO] {a420c50402e4d7171871e9728324d33d} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 15:54:56 [ERRO] {20f7a9ba05e4d7171b71e9725f8a7408} D:/code/gitea/gcts/library/liberr/err.go:18: sql: no rows in result set 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 16:08:03 [INFO] {4cd9e206bde4d7177372164cd4acb84b} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 16:08:07 [INFO] {606cea06bee4d7177472164c3097d64a} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 16:10:31 [INFO] {389a026ddfe4d7173afbc32f0f8385c8} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 16:10:35 [INFO] {8c65426ce0e4d7173bfbc32fd9900e7b} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 16:35:40 [INFO] {c44358c73ee6d7172de6f41329f74ee8} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 16:36:12 [INFO] {08160e5d46e6d7172fe6f41346300b82} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 16:36:49 [ERRO] {80b917e44ee6d7173ae6f413e7558316} D:/code/gitea/gcts/library/liberr/err.go:18: UPDATE `cts_voice` SET `count`='{}',`updated_at`='2024-06-11 16:36:49' WHERE voice_id=1: Error 1366 (HY000): Incorrect integer value: '{}' for column 'count' at row 1 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UpdateUsage.func1
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:133
+3.  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.UpdateUsage
+    D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:128
+4.  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*ttsController).Generate
+    D:/code/gitea/gcts/internal/app/cts/controller/cts_tts.go:66
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+6.  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+    D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+7.  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+    C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+8.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 16:47:47 [INFO] {14679a03e8e6d7173ed08c114930dcb3} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 16:53:37 [INFO] {189dafa839e7d7176d90b22571d3d3c8} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 16:57:29 [INFO] {54bf838b6fe7d7177090b225908a79cb} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 16:58:10 [ERRO] {18d5d61379e7d7177590b2258fee3636} D:/code/gitea/gcts/library/liberr/err.go:18: sql: no rows in result set 
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    D:/code/gitea/gcts/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:82
+3.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserByUsername
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:79
+4.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword.func1
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:62
+5.  github.com/tiger1103/gfast/v3/internal/app/system/logic/sysUser.(*sSysUser).GetAdminUserByUsernamePassword
+    D:/code/gitea/gcts/internal/app/system/logic/sysUser/sys_user.go:61
+6.  github.com/tiger1103/gfast/v3/internal/app/system/controller.(*loginController).Login
+    D:/code/gitea/gcts/internal/app/system/controller/sys_login.go:50
+7.  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+    D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-11 16:59:02 [INFO] {3085a64785e7d71701708a600af69b6e} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 16:59:07 [INFO] {d0d24d8e86e7d71702708a6017bb611c} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 17:03:43 [INFO] {4c9827a1c6e7d717c02f141bb67cd8c8} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 17:03:51 [INFO] {9cb44489c8e7d717c38b384d56f215a3} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 17:04:34 [INFO] {6cb5a1a1d2e7d717c48b384d7a2782d7} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 17:06:25 [INFO] {38649479ece7d7170e8ad152a539564f} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 17:09:45 [INFO] {809600051be8d717108ad1529cd7994d} C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/gftoken.go:118: token is invalid
+2024-06-11 17:10:22 [INFO] {28de339823e8d717dd9369242482e6d8} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19
+2024-06-11 17:25:44 [INFO] {d81cae48fae8d71703a3d15afd1c2210} D:/code/gitea/gcts/internal/cmd/cmd.go:22: 
+   ____________           __ 
+  / ____/ ____/___ ______/ /_
+ / / __/ /_  / __ `/ ___/ __/
+/ /_/ / __/ / /_/ (__  ) /_  
+\____/_/    \__,_/____/\__/   Version: 3.2.19

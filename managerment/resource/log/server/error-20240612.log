@@ -1,0 +1,641 @@
+2024-06-12 01:10:04.424 {1ce6bfeb5002d8171fb0d777e08f38dd} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.007, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+描述不能为空
+2024-06-12 01:19:01.750 {84e15f06ce02d81728b0d7776bf60ad2} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.016, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+描述不能为空
+2024-06-12 01:21:47.276 {88b4e690f402d81735b0d77710886ba3} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.009, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+描述不能为空
+2024-06-12 10:04:25.679 {b45df2c2791fd8174cb0d777e49a250e} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.016, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+描述不能为空
+2024-06-12 10:07:31.187 {1c4074f3a41fd81755b0d777c5d4c80d} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.026, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+描述不能为空
+2024-06-12 10:10:56.776 {5421ded1d41fd81764b0d777c407cd12} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.030, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+描述不能为空
+2024-06-12 10:12:59.555 {cc970469f11fd8176fb0d77707121956} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.004, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+tensor不能为空
+2024-06-12 10:21:48.893 {748cf3a76c20d8178aee0217114cbf8a} 200 "POST http localhost:8808 /api/v1/cts/tts/gen HTTP/1.1" 0.006, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+文本不能为空
+2024-06-12 14:45:58.780 {b4e082fcd62ed81753260e518dc5048a} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.044, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 音频复制失败
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:19
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:80
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:56
+   4).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Add
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:39
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   6).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   7).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   8).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 14:48:39.986 {ec6f3585fc2ed8170a114d132438f632} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.044, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 音频复制失败
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:19
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:81
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:56
+   4).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Add
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:39
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   6).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   7).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   8).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 14:50:00.605 {8475215c0a2fd817e254aa4f388b3021} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 21.222, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 音频复制失败
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:19
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:81
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:56
+   4).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Add
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:39
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   6).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   7).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   8).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 15:09:35.428 {38d1aad32030d817217d1e08de976cab} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.039, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 音频复制失败
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:19
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:81
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:56
+   4).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Add
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:39
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   6).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   7).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   8).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 15:10:09.133 {ac0883ac2830d8178387730672e7ac7f} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 0.041, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 音频复制失败
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:19
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:81
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:56
+   4).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Add
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:39
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   6).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   7).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   8).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 15:11:03.408 {9c3730c52f30d8178587730645421655} 200 "POST http localhost:8808 /api/v1/cts/voice/add HTTP/1.1" 23.838, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. 音频复制失败
+   1).  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+        D:/code/gitea/gcts/library/liberr/err.go:19
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:81
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.Add
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:56
+   4).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).Add
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:39
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   6).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   7).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   8).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:45:10.525 {fcfd3a549e38d817edc98474d3b7b6b5} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.015, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:45:11.201 {384e307d9e38d817eec9847415b1b844} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.004, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:45:11.841 {94405ca39e38d817efc9847458854c87} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.003, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:45:12.366 {20d0a3c29e38d817f0c9847441246c79} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.003, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:45:12.634 {4cfca4d29e38d817f1c984745e6a14bc} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.003, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:45:12.853 {f422b0df9e38d817f2c984746091bf7d} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.004, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:45:45.503 {a883b379a638d817f3c984749d061576} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.005, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:46:02.953 {3424dd88aa38d817f02a681a3d1dd6bd} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.020, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:46:27.335 {34703336b038d81702b07f3ba3a10983} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.019, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:47:05.197 {a0cfe925b238d81703b07f3b933d3378} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 29.565, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:47:25.625 {b49344c9bd38d81704b07f3b5a6a63dd} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.007, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:48:04.491 {24e1d5d5c638d81705b07f3b0f2b75e5} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 0.007, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:48:40.396 {10e400ddc838d81706b07f3b1cc84bd5} 200 "GET http localhost:8808 /api/v1/cts/voice/play?voiceId=30?t=1718185432966 HTTP/1.1" 27.203, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 语音不存在
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).AudioPlay
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:77
+   2).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:134
+   3).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:39
+   4).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   5).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 17:48:57.303 {6028e121d338d81707b07f3b5a60daca} 200 "GET http localhost:8808 /api/v1/cts/voice/play HTTP/1.1" 0.005, ::1, "", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+voicdeId不能为空
+2024-06-12 21:31:56.055 {6039341dfe44d817dd7cc651664a2992} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.011, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+voicdeId不能为空
+2024-06-12 21:33:14.024 {4cb902441045d817e37cc6518f9d8783} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.020, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", 51, "Validation Failed", ""
+Stack:
+voicdeId不能为空
+2024-06-12 21:43:54.092 {34083b49a545d8175f728d6d2b40d4bf} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.050, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:219
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:44:48.235 {087296e4b145d81715163025b9946834} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.048, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:219
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:45:19.802 {f08aa13fb945d8171916302585f61f43} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.021, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:219
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:46:45.157 {5409061ccd45d8172b802c3ad2fa3fab} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.074, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:219
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:50:49.552 {947c1b62fa45d8172d802c3a53f9fb29} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 50.021, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:215
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:57:53.922 {cc116bf66146d817e7e1327a4099f2f4} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 29.521, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:216
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:58:24.468 {208225f16f46d817e9e1327a66cbf104} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.026, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:220
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:58:56.323 {b467815a7746d817fa3e313ba9f52519} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.049, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:220
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 21:59:48.440 {38c528987e46d817fc3e313ba852fc8b} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 21.066, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:216
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:01:14.363 {04a6ac099146d817ec646b7867565cff} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 27.776, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:216
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:02:05.854 {6c54887da346d817fc646b7853fb529c} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 0.013, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:216
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:03:04.472 {5c5b5806ae46d817fe646b78bb335458} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 13.387, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:230
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:05:09.912 {2c2adbbcb746d81700656b78fe36b0cc} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 97.110, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:230
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:05:53.113 {c44b9eb7d646d817c6155f7a9a878c91} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 7.254, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:230
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:08:11.973 {b04cdcf3f646d817c8155f7ae08a3051} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 7.664, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:230
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:09:00.543 {9429a14e0247d817ca155f7afb30f33c} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 7.467, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:230
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
+2024-06-12 22:10:44.843 {5077b24c1647d8178a8cf66bf172666d} 200 "POST http localhost:8808 /api/v1/cts/voice/gen HTTP/1.1" 25.901, ::1, "http://127.0.0.1:8888/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", -1, "", ""
+Stack:
+1. 测试音频生成失败
+   1).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio.func1
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:230
+   2).  github.com/tiger1103/gfast/v3/internal/app/cts/logic/ctsVoice.sCtsVoice.GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/logic/ctsVoice/cts_voice.go:192
+   3).  github.com/tiger1103/gfast/v3/internal/app/cts/controller.(*voiceController).GenTestAudio
+        D:/code/gitea/gcts/internal/app/cts/controller/cts_voice.go:111
+   4).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:79
+   5).  github.com/tiger1103/gfast/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        D:/code/gitea/gcts/internal/app/system/logic/middleware/middleware.go:52
+   6).  github.com/tiger1103/gfast-token/gftoken.(*GfToken).authMiddleware
+        C:/Users/zhyj/go/pkg/mod/github.com/tiger1103/gfast-token@v1.0.6/gftoken/middleware.go:21
+   7).  github.com/tiger1103/gfast/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        D:/code/gitea/gcts/internal/app/common/logic/middleware/middleware.go:30
+
