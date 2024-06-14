@@ -22,6 +22,17 @@
   - 音色下载为json文件
   - 上传json文件快速添加，不可重名
 
+## 预览
+
+双击exe,访问`http://127.0.0.1:8808/sys`,默认密码`admin 123456`
+
+![](images/tts.png)
+
+![](images/voice.png)
+
+
+
+
 
 ## 安装
 
@@ -42,9 +53,9 @@
    python build.py
    ```
 
-   会打包生成一个目录,自动初始化目录结构
+   会打包生成一个目录,自动初始化目录结构chattts,主程序其中的tts.exe
 
-4. 根据实际情况修改数据库链接
+4. 根据实际情况修改数据库连接
 
    暂时不支持sqlite,有些兼容性需要处理
 
@@ -69,17 +80,9 @@ chatTTS:
 
 常见错误大都因为目录填写的不对,需仔细排查,如果使用的一键构建脚本只需更改数据库连接即可
 
-## 预览
-
-双击exe,访问`http://127.0.0.1:8808/sys`,默认密码`admin 123456`
-
-![](images/tts.png)
-
-![](images/voice.png)
-
 
 
 # 参考
 
-名词解释参考:https://zhuanlan.zhihu.com/p/703240560
-默认音色参考:https://github.com/2noise/ChatTTS/issues/238
+- 名词解释参考:https://zhuanlan.zhihu.com/p/703240560
+- 默认音色参考:https://github.com/2noise/ChatTTS/issues/238
