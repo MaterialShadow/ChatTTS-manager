@@ -107,6 +107,12 @@ def copy_base_dir(chatts_dir):
     temp_dir = chatts_dir.joinpath("audio_temp")
     audio_dir = chatts_dir.joinpath("audio")
     db_dir = chatts_dir.joinpath("db")
+    if not temp_dir.exists():
+        temp_dir.mkdir()
+    if not audio_dir.exists():
+        audio_dir.mkdir()
+    if not db_dir.exists():
+        db_dir.mkdir()
     if not manifest_dir.exists():
         log.info("manifest目录不存在，开始拷贝")
         shutil.copytree(Path("managerment").joinpath("manifest"),manifest_dir)
@@ -115,16 +121,14 @@ def copy_base_dir(chatts_dir):
     if not resource_dir.exists():
         log.info("resource目录不存在，开始拷贝")
         shutil.copytree(Path("managerment").joinpath("resource"),resource_dir)
+        # 复制数据库文件
+        shutil.copy(Path("managerment").joinpath("resource").joinpath("data").joinpath("sqlite").joinpath("tts.db"),db_dir)
+        log.info("复制数据库文件完成")
     if not hack_dir.exists():
         log.info("hack目录不存在，开始拷贝")
         shutil.copytree(Path("managerment").joinpath("hack"),hack_dir)
     log.info("拷贝基础文件完成")
-    if not temp_dir.exists():
-        temp_dir.mkdir()
-    if not audio_dir.exists():
-        audio_dir.mkdir()
-    if not db_dir.exists():
-        db_dir.mkdir()
+
 
 
 
@@ -162,6 +166,7 @@ def main():
         log.info("npm或Go未安装，请检查")
         return
     chatts_dir = Path("chattts")
+    shutil.rmtree(chatts_dir,ignore_errors=True)
     if not chatts_dir.exists():
         log.info("chatts文件夹不存在,创建chatts文件夹")
         chatts_dir.mkdir()
@@ -169,7 +174,7 @@ def main():
         log.info("chatts文件夹已经存在")
     # 复制资源
     copy_base_dir(chatts_dir)
-    # 构建前端
+    #构建前端
     managerment_dir = Path("managerment")
     buildFrontend(cwd=managerment_dir.joinpath("web"))
     copy_front_end(chatts_dir)

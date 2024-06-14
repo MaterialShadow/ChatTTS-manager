@@ -57,13 +57,16 @@
 
 4. 根据实际情况修改数据库连接
 
-   暂时不支持sqlite,有些兼容性需要处理
+   默认sqlite数据库,无需改动,如果需要改为mysql,参考如下建表语句
 
    ```
    mysql建表语句存放在resource\data下
    ```
 
 ​	5.配置文件在`mainifest/config/config.yaml中`
+
+- mysql ` link:   "mysql:root:123456@tcp(127.0.0.1:3306)/gfast?charset=utf8mb4&parseTime=true&loc=Local"`
+- sqlite `link: sqlite::@file(/./db/tts.db)`
 
 tts相关配置
 
@@ -78,7 +81,7 @@ chatTTS:
   audioSavePath: "./audio"
 ```
 
-常见错误大都因为目录填写的不对,需仔细排查,如果使用的一键构建脚本只需更改数据库连接即可
+常见错误大都因为目录填写的不对,需仔细排查,如果使用的一键构建脚本无需改动,直接启动apiServer和tts.exe即可
 
 
 

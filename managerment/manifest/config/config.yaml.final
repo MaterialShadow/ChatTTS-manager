@@ -31,7 +31,8 @@ database:
     Path: "resource/log/sql"
 
   default:
-    link:   "mysql:root:123456@tcp(127.0.0.1:3306)/gfast?charset=utf8mb4&parseTime=true&loc=Local"
+    link: sqlite::@file(/./db/tts.db)
+    #link:   "mysql:root:123456@tcp(127.0.0.1:3306)/gfast?charset=utf8mb4&parseTime=true&loc=Local"
     debug:  true
     charset: "utf8mb4" #数据库编码
     dryRun: false #空跑
