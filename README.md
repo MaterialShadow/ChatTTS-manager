@@ -15,12 +15,15 @@
     - 支持音色查询
 
   - 支持音色保存
-
 - 提供了音色管理界面
   - 音色列表管理
   - 音色样例音频快速试听
   - 音色下载为json文件
   - 上传json文件快速添加，不可重名
+
+
+
+暂只测试了windows,linux及macos未作测试
 
 ## 预览
 
@@ -82,6 +85,14 @@ chatTTS:
 ```
 
 常见错误大都因为目录填写的不对,需仔细排查,如果使用的一键构建脚本无需改动,直接启动apiServer和tts.exe即可
+
+# 构建好的包
+
+[chatts-manager](https://pan.baidu.com/s/1mz0o6yhBz9FKEZBOMdQ-rQ?pwd=u9wb)
+
+1. 解压后自行创建环境及依赖,运行apiServer中main.py
+2. 双击chattts中tts.exe
+3. 访问`http://127.0.0.1:8807/sys`
 
 
 
