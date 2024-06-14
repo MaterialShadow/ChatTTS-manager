@@ -2,7 +2,6 @@ package ctsVoice
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"github.com/gogf/gf/v2/database/gdb"
 	"github.com/gogf/gf/v2/encoding/gjson"
@@ -292,8 +291,12 @@ func (s sCtsVoice) UploadJson(ctx context.Context, req *cts.VoiceUploadReq) (err
 			contentByte, readErr := io.ReadAll(file)
 			liberr.ErrIsNil(ctx, readErr, "文件读取失败")
 			voiceList := make([]*model.CtsVoiceSimple, 0)
-			err = json.Unmarshal(contentByte, &voiceList)
+			j, decodeErr := gjson.DecodeToJson(string(contentByte))
+			liberr.ErrIsNil(ctx, decodeErr, "json解析失败")
+			err = j.Scan(&voiceList)
 			liberr.ErrIsNil(ctx, err, "json解析失败")
+			//err = json.Unmarshal(contentByte, &voiceList)
+			//liberr.ErrIsNil(ctx, err, "json解析失败")
 			nameList := new([]string)
 			for _, v := range voiceList {
 				voiceName := v.Name
