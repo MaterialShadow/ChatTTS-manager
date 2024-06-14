@@ -19,6 +19,7 @@ main
 output/
 manifest/output/
 *.exe
+*.log
 tmp/
 resource/data/gen_sql
 resource/log/
@@ -30,3 +31,4 @@ manifest/config/config.yaml
 GFastV3
 /manifest/config/db.yaml
 chattts/
+log/

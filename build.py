@@ -166,7 +166,6 @@ def main():
         log.info("npm或Go未安装，请检查")
         return
     chatts_dir = Path("chattts")
-    shutil.rmtree(chatts_dir,ignore_errors=True)
     if not chatts_dir.exists():
         log.info("chatts文件夹不存在,创建chatts文件夹")
         chatts_dir.mkdir()

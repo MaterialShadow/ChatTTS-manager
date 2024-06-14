@@ -101,6 +101,6 @@ chatTTS:
   # apiurl
   apiUrl: "http://127.0.0.1:8087"
   # api audio path
-  audioTempPath: "./audio_temp"
+  audioTempPath: "D:/tts"
   # audio SavePath
-  audioSavePath: "./audio"
+  audioSavePath: "D:/ttssave"
